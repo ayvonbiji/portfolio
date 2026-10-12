@@ -14,90 +14,130 @@ window.PORTFOLIO = {
   profile: {
     name: "Ayvon Joseph Biji",
     initials: "AJB",
-    headline: "SOC Analyst · IT Support · Cybersecurity",
+    eyebrow: "Cybersecurity · SOC · IT Support",
+    title: "L1 SOC Analyst & IT Support Professional",
     intro:
-      "Computer Science graduate with an MSc in Cybersecurity, currently working as a SOC Analyst & Cyber Security Defense Intern. I triage alerts, analyse logs, support users and systems, and write things up so the next person can follow them.",
+      "MSc Cybersecurity graduate (University of Aberdeen) with a B.Tech in Computer Science, currently a SOC Analyst & Cyber Security Defense Intern. I monitor and triage security alerts, analyse logs across endpoint, network and identity sources, support users and systems, and document every case so it can be followed end to end.",
     location: "India",
-    availability: "Immediate joiner · Open to relocation",
+    availability: "Immediate joiner",
+    relocation: "Open to relocation",
+    shifts: "Available for rotational and night shifts",
     currentRole: "SOC Analyst & Cyber Security Defense Intern",
     currentOrg: "GROWAI EdTech Solution",
-    learning: "Microsoft Sentinel & KQL · Security+ exam",
-    photo: "" // optional: "assets/img/profile.jpg"
+    learning: "Microsoft Sentinel, KQL, Defender XDR, CompTIA Security+ exam"
   },
 
   about: [
-    "I hold a B.Tech in Computer Science & Engineering from Karunya Institute of Technology & Sciences and an MSc in Cybersecurity from the University of Aberdeen. Across internships at 1StopAI, Verzeo, Internshala Trainings and now GROWAI, I've worked on alert triage, log analysis, Active Directory access reviews, patch and backup verification, and support documentation.",
-    "Between my MSc and my current internship I spent two and a half years in full-time, customer-facing shift work in Scotland, including nights and weekends. It taught me to stay calm under pressure, follow procedure, hand over cleanly and see an issue through until it is closed.",
-    "I'm looking for an L1 SOC, incident analyst or IT support role where I can keep building depth in Microsoft Sentinel, KQL and Defender, and grow towards L2 SOC and incident response."
+    "I work where IT support meets security operations. My internships at 1StopAI, Verzeo, Internshala Trainings and now GROWAI have covered alert triage, log analysis and event correlation, Active Directory access reviews, patch and backup verification, and clear incident documentation.",
+    "Between my MSc and my current internship I spent two and a half years in full-time, customer-facing shift work in Scotland, including nights and weekends. That work built the habits a SOC or service desk depends on: following procedure, escalating through the right route, keeping accurate records and handing over cleanly between shifts."
   ],
 
+  goals: {
+    statement:
+      "I'm looking for an L1 SOC, incident analyst or IT support role in an SLA-driven team, where I can build hands-on depth in Microsoft Sentinel and KQL and progress towards L2 SOC and incident response.",
+    targetRoles: ["SOC Analyst (L1)", "Cybersecurity Incident Analyst (L1)", "IT / Technical Support Analyst", "Network Security Engineer"]
+  },
+
+  // type: shown as a badge. current: true adds a "Current" marker.
   experience: [
     {
       role: "SOC Analyst & Cyber Security Defense Intern",
       org: "GROWAI EdTech Solution Pvt. Ltd.",
       place: "India (Remote)",
       dates: "Aug 2026 – Present",
+      type: "Internship",
       current: true,
-      points: [
-        "Three-month SOC and cyber defence internship built around hands-on labs in log analysis, endpoint security, operating systems and networking.",
-        "Practising L1 alert triage: working out what happened, in what order, and whether activity is genuine or benign.",
-        "Deciding when findings need escalation and documenting evidence, timeline and response steps for senior review."
-      ]
+      summary:
+        "A three-month SOC and cyber defence internship built around hands-on lab work in log analysis, endpoint security, operating systems and networking foundations.",
+      responsibilities: [
+        "Practise L1 alert triage: review alerts and activity records to establish what happened, in what order, and whether it is a genuine threat or ordinary activity.",
+        "Decide whether findings warrant escalation, and document the response steps, evidence and timeline so a senior analyst can follow the reasoning end to end.",
+        "Apply structured troubleshooting: gather the details, work out the cause, and record what resolved it.",
+        "Work remotely to set deadlines with little supervision, submitting written investigation reports for review."
+      ],
+      skills: ["Alert triage", "Log analysis", "Endpoint security", "Escalation", "Investigation reports", "Remote working"]
     },
     {
       role: "Cybersecurity Trainee",
       org: "TryHackMe",
-      place: "Online, hands-on labs",
+      place: "Online",
       dates: "Apr 2025 – Present",
+      type: "Hands-on training",
       current: true,
-      points: [
-        "Building practical cybersecurity skills through hands-on TryHackMe rooms based on real-world scenarios.",
+      summary:
+        "Ongoing self-directed practice on the TryHackMe platform, working through real-world scenarios in both defensive and offensive security.",
+      responsibilities: [
         "Completed the SIEM room: security monitoring, incident response, log analysis and threat detection.",
         "Completed the Cryptography room: RSA, encryption fundamentals, Diffie-Hellman and post-quantum cryptography.",
-        "Practising ethical hacking, network security, web application security and the OWASP Top 10.",
+        "Practise ethical hacking, network security, web application security and the OWASP Top 10.",
         "Learning penetration testing methodology, defensive security and threat analysis."
-      ]
+      ],
+      skills: ["SIEM", "Incident response", "Cryptography", "OWASP Top 10", "Penetration testing"]
     },
     {
       role: "Domestic Assistant (Full-Time)",
       org: "Renaissance Care",
       place: "Scotland, United Kingdom",
       dates: "May 2023 – Dec 2025",
-      points: [
-        "Two and a half years of rotational shift work including nights, weekends and holidays, with clean handovers and accurate records.",
-        "Followed documented procedures and escalated issues through set routes until resolved."
-      ]
+      type: "Full-time",
+      summary:
+        "Two and a half years of full-time, customer-facing work on rotating shifts. Not a technical role, but the working habits carry directly into 24/7 SOC and service desk operations.",
+      responsibilities: [
+        "Worked rotational shifts including nights, weekends and holidays, handing over cleanly between shifts and keeping accurate records.",
+        "Spoke with residents, families and colleagues every day, handling people patiently and professionally.",
+        "Managed several competing responsibilities each day under time pressure.",
+        "Followed documented procedures and reported issues through set escalation routes until they were resolved."
+      ],
+      skills: ["Shift work (24/7)", "Shift handover", "Record keeping", "Escalation procedures", "Prioritisation", "Customer communication"]
     },
     {
-      role: "Cyber Security / IT Support Intern",
+      role: "Cyber Security Intern",
       org: "Internshala Trainings",
       place: "India",
       dates: "Sep 2021 – Oct 2021",
-      points: [
-        "Monitored Windows, Linux and network environments and analysed system, network and endpoint logs to support initial investigations.",
-        "Diagnosed user-reported issues, reproduced faults and used SQL to check whether a problem sat in the data or the application.",
-        "Documented each case consistently and escalated with supporting evidence attached."
-      ]
+      type: "Internship",
+      summary:
+        "Security monitoring and user support under mentor guidance across Windows, Linux and network environments.",
+      responsibilities: [
+        "Monitored Windows, Linux and network environments, reviewing system and endpoint activity for security-relevant events.",
+        "Analysed system logs, network activity and endpoint records, correlating sources to trace what happened and when.",
+        "Separated ordinary activity from events worth investigating, the core of false positive identification.",
+        "Diagnosed user-reported software and application issues by reproducing faults and running basic SQL queries to check whether the problem sat in the data or the application.",
+        "Documented each case consistently and escalated to senior team members with supporting evidence attached; confirmed fixes with users before closing tickets."
+      ],
+      skills: ["Log correlation", "False positive identification", "SQL", "Ticket documentation", "Escalation"]
     },
     {
-      role: "Cyber Security / IT Support Intern",
+      role: "Cyber Security Intern",
       org: "Verzeo",
       place: "India",
       dates: "Jun 2020 – Jul 2020",
-      points: [
-        "Reviewed security events and system performance as part of routine monitoring.",
-        "Supported patching and misconfiguration checks and verified backup jobs completed as expected."
-      ]
+      type: "Internship",
+      summary:
+        "Routine security and system monitoring, troubleshooting, and patch and backup verification.",
+      responsibilities: [
+        "Reviewed security events and system performance during routine monitoring, building a sense of normal so anomalies stood out.",
+        "Investigated hardware, system and network issues by reviewing logs and configuration, separating minor faults from findings that needed escalation.",
+        "Supported patching and misconfiguration checks, confirming updates had applied and backup jobs had completed, and following up on anything missed.",
+        "Maintained technical documentation and incident records, using Excel to organise information and produce reports."
+      ],
+      skills: ["Security monitoring", "Troubleshooting", "Patch validation", "Backup verification", "Documentation"]
     },
     {
-      role: "Cyber Security / IT Support Intern",
+      role: "Cyber Security Intern",
       org: "1StopAI",
       place: "India",
       dates: "Jun 2019 – Aug 2019",
-      points: [
-        "Reviewed Active Directory accounts and permissions against least privilege and assisted with joiner and leaver access.",
-        "Wrote Python scripts to automate routine security reporting and maintained runbooks and SOPs."
-      ]
+      type: "Internship",
+      summary:
+        "Infrastructure monitoring, identity and access administration, and reporting automation.",
+      responsibilities: [
+        "Supported infrastructure and application monitoring, helping identify security and operational issues before they reached users.",
+        "Administered Active Directory accounts: setup, group membership and permission reviews so each account held only the access its role required.",
+        "Assisted with joiner and leaver handling and access validation during user onboarding and offboarding.",
+        "Wrote Python scripts to automate routine security reporting, and maintained runbooks, troubleshooting guides and SOPs."
+      ],
+      skills: ["Active Directory", "Least privilege", "Access reviews", "Python automation", "Runbooks & SOPs"]
     }
   ],
 
@@ -129,6 +169,10 @@ window.PORTFOLIO = {
     {
       group: "Scripting & data",
       items: ["Python", "PowerShell", "Bash", "SQL / MySQL", "Pandas", "Scikit-learn"]
+    },
+    {
+      group: "Currently learning",
+      items: ["Microsoft Sentinel", "KQL", "Defender XDR", "Defender for Endpoint", "SC-200 path", "CompTIA Security+ exam"]
     }
   ],
 
@@ -264,10 +308,8 @@ window.PORTFOLIO = {
     { name: "Practical security labs", issuer: "TryHackMe", status: "Ongoing" }
   ],
 
-  resume: {
-    file: "assets/resume/Ayvon_Joseph_Biji_CV.pdf",
-    note: "SOC Analyst L1 version. Tailored CVs for IT Support, Cloud & Systems, Network Security and DevOps roles are available on request."
-  },
+  // Shown in the Contact section. There is no public resume download.
+  resumeRequest: "Interested in my professional background? Please contact me to request my resume.",
 
   contact: {
     email: "ayvonjosephbiji00@gmail.com",

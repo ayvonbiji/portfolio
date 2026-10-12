@@ -13,18 +13,14 @@ portfolio/
 │   ├── css/styles.css         # Design: colors, fonts, layout (light + dark mode)
 │   ├── js/content.js          # ← ALL website text lives here. Edit this to update the site.
 │   ├── js/main.js             # Renders content.js into the page (rarely needs changes)
-│   ├── img/favicon.svg        # Browser tab icon
-│   └── resume/Ayvon_Joseph_Biji_CV.pdf   # The CV behind the "Download CV" buttons
-├── classic/                   # The first design, kept for comparison (yoursite/classic)
+│   └── img/favicon.svg        # Browser tab icon
 ├── vercel.json                # Vercel settings (clean URLs, cache + security headers)
 └── README.md
 ```
 
-## Designs
+## Resume policy
 
-- **Main design** (`/`): fixed profile sidebar, dark navy with amber accent, light mode toggle, filterable projects.
-- **Classic design** (`/classic`): the first light, single-column version. Both read the same `content.js`.
-  Delete the `classic/` folder once you've chosen.
+There is no public resume download. The Contact section asks visitors to request it, and the "Email me" button opens an email with the subject "Resume request". Change the wording in `resumeRequest` inside `content.js`.
 
 ## Updating content
 
@@ -32,9 +28,10 @@ Open `assets/js/content.js` and edit the text. Common changes:
 
 | To change…                 | Edit in `content.js`                          |
 | -------------------------- | --------------------------------------------- |
-| Name, headline, intro      | `profile`                                     |
+| Name, title, intro, availability | `profile`                               |
 | About paragraphs           | `about`                                       |
-| Jobs / internships         | `experience` (copy a `{ ... }` block to add)   |
+| Career goal, target roles  | `goals`                                       |
+| Jobs / internships         | `experience`: `summary`, `responsibilities`, `skills` per role |
 | Skills                     | `skills`                                      |
 | Projects + GitHub links    | `projects` → `links.code` / `links.demo`; `featured: true` makes a card full width; `category` drives the filter |
 | Degrees                    | `education`                                   |
@@ -42,8 +39,7 @@ Open `assets/js/content.js` and edit the text. Common changes:
 | Email, LinkedIn, GitHub    | `contact` (`showPhone: true` shows your mobile) |
 
 - Any text in `[square brackets]` is highlighted on the page as a placeholder.
-- To replace the CV, drop a new PDF into `assets/resume/` with the same file name (or change `resume.file`).
-- To add a profile photo later, put it in `assets/img/` and set `profile.photo`.
+- Add a GitHub link to a project with `links.code` and a "View on GitHub" link appears on its card.
 
 ## Run locally
 
