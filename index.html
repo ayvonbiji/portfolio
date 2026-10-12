@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Ayvon Joseph Biji · L1 SOC Analyst & IT Support</title>
-  <meta name="description" content="Ayvon Joseph Biji: L1 SOC analyst and IT support professional. MSc Cybersecurity (University of Aberdeen), B.Tech Computer Science. Immediate joiner, open to relocation.">
-  <meta property="og:title" content="Ayvon Joseph Biji · L1 SOC Analyst & IT Support">
-  <meta property="og:description" content="Cybersecurity, SOC and IT support portfolio.">
+  <title>Ayvon Joseph Biji · Entry-level IT & Cybersecurity</title>
+  <meta name="description" content="Ayvon Joseph Biji: entry-level IT and cybersecurity professional for IT support, desktop support, networking, system administration and SOC roles. MSc Cybersecurity (University of Aberdeen), B.Tech Computer Science.">
+  <meta property="og:title" content="Ayvon Joseph Biji · Entry-level IT & Cybersecurity">
+  <meta property="og:description" content="IT support, networking, system administration and cybersecurity portfolio.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -27,6 +27,7 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#learning">Learning</a>
         <a href="#education">Education</a>
         <a class="nav-cta-mobile" href="#contact">Contact</a>
       </nav>
@@ -78,15 +79,17 @@
       <div class="container">
         <div class="section-head">
           <p class="section-kicker">About me</p>
-          <h2>Security operations, backed by solid IT support</h2>
+          <h2>A cybersecurity background with solid IT foundations</h2>
         </div>
         <div class="about-grid">
           <div class="about-text" id="aboutBody"></div>
-          <div class="goal-card">
-            <p class="mini-label">Career goal</p>
+          <div class="goal-card" id="career">
+            <p class="mini-label">Career interests</p>
             <p class="goal-text" id="goalText"></p>
             <p class="mini-label">Roles I'm targeting</p>
-            <ul class="tag-list" id="targetRoles"></ul>
+            <ul class="role-list" id="targetRoles"></ul>
+            <p class="mini-label open-label">Open to</p>
+            <ul class="tag-list" id="openTo"></ul>
           </div>
         </div>
       </div>
@@ -97,10 +100,21 @@
       <div class="container">
         <div class="section-head">
           <p class="section-kicker">Experience</p>
-          <h2>Professional experience</h2>
-          <p class="section-sub">Security internships, hands-on training and full-time shift work, most recent first.</p>
+          <h2>Experience</h2>
+          <p class="section-sub">What I've done in each area, labelled by where it comes from: internships and employment, labs, projects, academic study or technical knowledge.</p>
         </div>
+
+        <div class="areas-head">
+          <h3 class="group-title">Relevant experience by area</h3>
+          <ul class="legend" id="sourceLegend" aria-label="Source labels"></ul>
+        </div>
+        <div class="area-grid" id="areaGrid"></div>
+
+        <h3 class="group-title timeline-title">Employment &amp; internships</h3>
         <ol class="timeline" id="experienceList"></ol>
+
+        <h3 class="group-title timeline-title">Labs &amp; training</h3>
+        <ol class="timeline" id="trainingList"></ol>
       </div>
     </section>
 
@@ -114,8 +128,10 @@
           </div>
           <div class="tabs" role="group" aria-label="Filter projects" id="filters">
             <button type="button" class="tab" id="f-all" data-filter="all" aria-pressed="true">All</button>
-            <button type="button" class="tab" id="f-academic" data-filter="academic" aria-pressed="false">Academic</button>
-            <button type="button" class="tab" id="f-hands" data-filter="hands-on" aria-pressed="false">Hands-on</button>
+            <button type="button" class="tab" id="f-sec" data-filter="cybersecurity" aria-pressed="false">Cybersecurity</button>
+            <button type="button" class="tab" id="f-net" data-filter="networking" aria-pressed="false">Networking</button>
+            <button type="button" class="tab" id="f-it" data-filter="it-systems" aria-pressed="false">IT &amp; Systems</button>
+            <button type="button" class="tab" id="f-acad" data-filter="academic" aria-pressed="false">Academic</button>
           </div>
         </div>
         <div class="project-grid" id="projectsGrid"></div>
@@ -128,8 +144,32 @@
         <div class="section-head">
           <p class="section-kicker">Skills</p>
           <h2>Technical skills</h2>
+          <p class="section-sub">Grouped by area. The Experience section shows where each one was used.</p>
         </div>
         <div class="skill-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Soft skills -->
+    <section class="section" id="soft-skills">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Soft skills</p>
+          <h2>How I work</h2>
+        </div>
+        <ul class="soft-grid" id="softGrid"></ul>
+      </div>
+    </section>
+
+    <!-- Continuous learning -->
+    <section class="section section-tint" id="learning">
+      <div class="container learning-wrap">
+        <div class="section-head">
+          <p class="section-kicker">Continuous learning</p>
+          <h2>Currently learning</h2>
+          <p class="learning-intro" id="learningIntro"></p>
+        </div>
+        <ul class="learn-grid" id="learnGrid"></ul>
       </div>
     </section>
 
@@ -153,7 +193,7 @@
           <div class="contact-intro">
             <p class="section-kicker">Contact</p>
             <h2>Let's work together</h2>
-            <p class="contact-lead">I'm open to L1 SOC, incident analyst and IT support opportunities. The quickest way to reach me is by email.</p>
+            <p class="contact-lead">I'm open to entry-level, junior and internship opportunities in IT support, desktop support, networking, system administration and cybersecurity. The quickest way to reach me is by email.</p>
             <div class="resume-note">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg>
               <p data-bind="resumeRequest"></p>

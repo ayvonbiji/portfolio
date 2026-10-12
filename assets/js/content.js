@@ -14,29 +14,95 @@ window.PORTFOLIO = {
   profile: {
     name: "Ayvon Joseph Biji",
     initials: "AJB",
-    eyebrow: "Cybersecurity · SOC · IT Support",
-    title: "L1 SOC Analyst & IT Support Professional",
+    eyebrow: "IT Support · Networking · Cybersecurity",
+    title: "Entry-level IT & Cybersecurity Professional",
     intro:
-      "MSc Cybersecurity graduate (University of Aberdeen) with a B.Tech in Computer Science, currently a SOC Analyst & Cyber Security Defense Intern. I monitor and triage security alerts, analyse logs across endpoint, network and identity sources, support users and systems, and document every case so it can be followed end to end.",
+      "MSc Cybersecurity graduate (University of Aberdeen) with a B.Tech in Computer Science. I'm looking for entry-level, junior and internship opportunities in IT support, desktop support, networking, system administration and SOC analysis, and I bring internship and lab experience in troubleshooting, user and access support, log analysis and clear technical documentation.",
     location: "India",
     availability: "Immediate joiner",
+    openTo: "Open to entry-level, junior and internship roles",
     relocation: "Open to relocation",
     shifts: "Available for rotational and night shifts",
     currentRole: "SOC Analyst & Cyber Security Defense Intern",
-    currentOrg: "GROWAI EdTech Solution",
-    learning: "Microsoft Sentinel, KQL, Defender XDR, CompTIA Security+ exam"
+    currentOrg: "GROWAI EdTech Solution"
   },
 
   about: [
-    "I work where IT support meets security operations. My internships at 1StopAI, Verzeo, Internshala Trainings and now GROWAI have covered alert triage, log analysis and event correlation, Active Directory access reviews, patch and backup verification, and clear incident documentation.",
-    "Between my MSc and my current internship I spent two and a half years in full-time, customer-facing shift work in Scotland, including nights and weekends. That work built the habits a SOC or service desk depends on: following procedure, escalating through the right route, keeping accurate records and handing over cleanly between shifts."
+    "I'm an entry-level IT professional with a cybersecurity academic background. My MSc in Cybersecurity and B.Tech in Computer Science gave me the theory; internships at 1StopAI, Verzeo, Internshala Trainings and now GROWAI gave me practical exposure to troubleshooting user and system issues, Active Directory account and permission work, patch and backup checks, security monitoring and log analysis.",
+    "Between my MSc and my current internship I spent two and a half years in full-time, customer-facing shift work in Scotland, including nights and weekends. It built the habits any IT team relies on: clear communication, following procedure, escalating through the right route, keeping accurate records and handing over cleanly.",
+    "I'm interested in several areas of IT and happy to start at the entry level, learn on the job and grow with the team."
   ],
 
+  // CAREER INTERESTS: shown in the About section.
   goals: {
     statement:
-      "I'm looking for an L1 SOC, incident analyst or IT support role in an SLA-driven team, where I can build hands-on depth in Microsoft Sentinel and KQL and progress towards L2 SOC and incident response.",
-    targetRoles: ["SOC Analyst (L1)", "Cybersecurity Incident Analyst (L1)", "IT / Technical Support Analyst", "Network Security Engineer"]
+      "To start my career in an entry-level or junior IT role where I can apply my troubleshooting, networking and security knowledge, learn from experienced colleagues, and keep developing across IT support, infrastructure and cybersecurity.",
+    targetRoles: [
+      { role: "IT Support / Technical Support", icon: "headset" },
+      { role: "Desktop Support / Desktop Engineering", icon: "monitor" },
+      { role: "Network Support & Troubleshooting", icon: "network" },
+      { role: "Junior System Administrator / IT Infrastructure", icon: "server" },
+      { role: "Cybersecurity / SOC Analyst (L1)", icon: "shield" }
+    ],
+    openTo: ["Entry-level roles", "Junior positions", "Internships", "Rotational & night shifts", "Relocation"]
   },
+
+  // RELEVANT EXPERIENCE BY AREA
+  // Every item says where it comes from, so employment is never confused with study.
+  // source: "internship" | "employment" | "lab" | "project" | "academic" | "knowledge"
+  areas: [
+    {
+      area: "IT Support",
+      icon: "headset",
+      items: [
+        { text: "Diagnosed user-reported software and application issues, reproducing faults before fixing them", source: "internship", where: "Internshala" },
+        { text: "Investigated hardware, system and application issues; resolved routine incidents and escalated complex ones", source: "internship", where: "Verzeo" },
+        { text: "Recorded technical steps and resolutions so tickets stayed useful to the next person", source: "internship", where: "Internshala" },
+        { text: "Software installation, Windows 10/11, Microsoft 365 and remote support tools", source: "knowledge" }
+      ]
+    },
+    {
+      area: "Desktop Engineering",
+      icon: "monitor",
+      items: [
+        { text: "Supported software updates and patching, and verified backup jobs completed", source: "internship", where: "Verzeo" },
+        { text: "Assisted with software configuration and day-to-day operational support", source: "internship", where: "1StopAI" },
+        { text: "Desktop and laptop configuration, printer and peripheral support, hardware troubleshooting", source: "knowledge" }
+      ]
+    },
+    {
+      area: "Networking",
+      icon: "network",
+      items: [
+        { text: "Monitored network environments and investigated network issues by reviewing logs and configuration", source: "internship", where: "Internshala, Verzeo" },
+        { text: "Cisco CCNA: Introduction to Networks", source: "academic", where: "Cisco course" },
+        { text: "Network traffic analysis with Wireshark and SIEM integration", source: "project" },
+        { text: "Wireless security protocol analysis, WEP to WPA3", source: "academic", where: "MSc, CS502B" },
+        { text: "TCP/IP, OSI model, IP addressing, subnetting, DNS, DHCP, VLANs, routers and firewalls", source: "knowledge" }
+      ]
+    },
+    {
+      area: "Cybersecurity",
+      icon: "shield",
+      items: [
+        { text: "L1 alert triage, log analysis, escalation and written investigation reports", source: "internship", where: "GROWAI" },
+        { text: "Security monitoring, log correlation and false positive identification", source: "internship", where: "Internshala, Verzeo" },
+        { text: "SIEM, incident response, cryptography and OWASP Top 10 rooms", source: "lab", where: "TryHackMe" },
+        { text: "Phishing email detection and risk scoring system", source: "project" },
+        { text: "Risk assessment, GDPR governance and security awareness planning", source: "academic", where: "MSc" }
+      ]
+    },
+    {
+      area: "System Administration",
+      icon: "server",
+      items: [
+        { text: "Active Directory account setup, group membership and permission reviews against least privilege", source: "internship", where: "1StopAI" },
+        { text: "Joiner and leaver handling and access validation during onboarding and offboarding", source: "internship", where: "1StopAI" },
+        { text: "Python scripts to automate routine reporting; runbooks and SOPs", source: "internship", where: "1StopAI" },
+        { text: "Windows Server, Entra ID / Azure AD, MFA and system configuration", source: "knowledge" }
+      ]
+    }
+  ],
 
   // type: shown as a badge. current: true adds a "Current" marker.
   experience: [
@@ -63,6 +129,7 @@ window.PORTFOLIO = {
       place: "Online",
       dates: "Apr 2025 – Present",
       type: "Hands-on training",
+      kind: "training", // listed under "Labs & training" instead of employment
       current: true,
       summary:
         "Ongoing self-directed practice on the TryHackMe platform, working through real-world scenarios in both defensive and offensive security.",
@@ -141,49 +208,79 @@ window.PORTFOLIO = {
     }
   ],
 
+  // TECHNICAL SKILLS: tags only, no proficiency levels. Add or remove freely.
   skills: [
     {
-      group: "Security operations",
-      items: ["Alert triage (L1)", "Log analysis & correlation", "False positive identification", "Incident documentation", "Escalation to L2/L3", "MITRE ATT&CK", "Detection rule tuning", "OWASP Top 10"]
+      group: "IT Support & Desktop Support",
+      icon: "headset",
+      items: ["Hardware & software troubleshooting", "Software installation", "Desktop & laptop configuration", "Printer & peripheral support", "Microsoft 365 / Office 365", "Outlook, Teams, SharePoint, OneDrive", "Remote support (RDP, TeamViewer, AnyDesk)", "Ticketing & SLAs", "Patch & update validation", "Backup verification", "Asset & inventory records"]
     },
     {
-      group: "SIEM & security tools",
-      items: ["Splunk", "ELK Stack", "Wazuh", "Microsoft Defender", "Wireshark", "Burp Suite", "IDS/IPS concepts"]
+      group: "Networking Fundamentals",
+      icon: "network",
+      items: ["TCP/IP", "OSI model", "IP addressing", "Subnetting", "DNS", "DHCP", "VLAN", "VPN", "LAN / WAN / Wi-Fi", "Routers & switches", "Firewall basics", "Connectivity troubleshooting"]
     },
     {
-      group: "Identity & Microsoft 365",
-      items: ["Active Directory", "Entra ID / Azure AD", "MFA", "Least privilege", "Microsoft 365", "Exchange Online", "Teams", "SharePoint"]
+      group: "Cybersecurity Fundamentals",
+      icon: "shield",
+      items: ["Alert triage & log analysis", "Incident response concepts", "Phishing analysis", "Risk assessment & GRC", "Security awareness", "Endpoint security", "MITRE ATT&CK", "OWASP Top 10", "IDS/IPS concepts", "Cryptography basics", "GDPR / PCI DSS"]
     },
     {
-      group: "Networking",
-      items: ["TCP/IP", "DNS", "DHCP", "VPN", "VLAN", "LAN / WAN", "Firewall basics", "Connectivity troubleshooting"]
+      group: "Operating Systems & System Administration",
+      icon: "server",
+      items: ["Windows 10/11", "Windows Server", "Linux (Ubuntu, Kali)", "macOS", "Active Directory", "Entra ID / Azure AD", "User account management", "Permissions & least privilege", "MFA", "VMware", "Hyper-V"]
     },
     {
-      group: "Systems & cloud",
-      items: ["Windows 10/11", "Windows Server", "Linux (Ubuntu, Kali)", "macOS", "AWS (EC2, S3, IAM, VPC)", "Azure fundamentals", "VMware", "Hyper-V"]
+      group: "Tools & Technologies",
+      icon: "tool",
+      items: ["Splunk", "ELK Stack", "Wazuh", "Microsoft Defender", "Wireshark", "Burp Suite", "Jira", "Confluence", "Python", "PowerShell", "Bash", "SQL / MySQL", "AWS (EC2, S3, IAM, VPC)", "Azure fundamentals"]
     },
     {
-      group: "IT support & service desk",
-      items: ["Desktop & hardware support", "Remote support", "Ticketing & SLAs", "Patch & backup verification", "Jira", "Confluence", "Knowledge base & SOPs"]
-    },
-    {
-      group: "Scripting & data",
-      items: ["Python", "PowerShell", "Bash", "SQL / MySQL", "Pandas", "Scikit-learn"]
-    },
-    {
-      group: "Currently learning",
-      items: ["Microsoft Sentinel", "KQL", "Defender XDR", "Defender for Endpoint", "SC-200 path", "CompTIA Security+ exam"]
+      group: "Troubleshooting & Problem-Solving",
+      icon: "search",
+      items: ["Structured troubleshooting", "Reproducing faults", "Root cause analysis", "Log & configuration review", "Escalation with evidence", "Documentation & SOPs", "Knowledge base articles"]
     }
   ],
 
-  // category: "academic" or "hands-on" (used by the project filter)
+  // SOFT SKILLS: each has a short, real example from my experience.
+  softSkills: [
+    { name: "Communication", icon: "chat", note: "Spoke with residents, families and colleagues daily; write investigation reports others can follow." },
+    { name: "Teamwork & Collaboration", icon: "users", note: "Worked with mentors to test fixes, and handed over cleanly between shifts." },
+    { name: "Problem-Solving", icon: "puzzle", note: "Gather the details, find the cause, record what fixed it." },
+    { name: "Adaptability", icon: "refresh", note: "Moved between care work in the UK and IT and security work in India, on site and remote." },
+    { name: "Willingness to Learn", icon: "book", note: "Ongoing TryHackMe labs and certification study alongside my internship." },
+    { name: "Time Management", icon: "clock", note: "Handled competing responsibilities under time pressure and met remote deadlines." },
+    { name: "Attention to Detail", icon: "target", note: "Accurate records, evidence and timelines in every case I document." },
+    { name: "Critical Thinking", icon: "bulb", note: "Separating genuine threats from ordinary activity during alert triage." },
+    { name: "Flexibility & Open-Mindedness", icon: "compass", note: "Open to rotational and night shifts, relocation, and different IT domains." }
+  ],
+
+  // CONTINUOUS LEARNING: add new courses, certifications, labs or technologies here.
+  // type: "Certification" | "Course" | "Lab" | "Technology"
+  // status: "In progress" | "Planned" | "Ongoing" | "Completed"
+  learning: {
+    intro:
+      "I am a motivated entry-level IT professional who enjoys learning new technologies, solving technical problems, and continuously developing my skills across IT support, networking, and cybersecurity.",
+    items: [
+      { name: "CompTIA Security+ exam", type: "Certification", area: "Cybersecurity", status: "In progress" },
+      { name: "Microsoft MS-900 & MD-102", type: "Certification", area: "IT Support", status: "In progress" },
+      { name: "CCNA 200-301", type: "Certification", area: "Networking", status: "In progress" },
+      { name: "Cisco Endpoint Security", type: "Course", area: "Cybersecurity", status: "In progress" },
+      { name: "ITIL Foundation & ServiceNow", type: "Course", area: "IT Support", status: "In progress" },
+      { name: "Microsoft Sentinel & KQL", type: "Technology", area: "Cybersecurity", status: "In progress" },
+      { name: "Office 365 admin & Windows registry", type: "Technology", area: "System Administration", status: "In progress" },
+      { name: "TryHackMe practical labs", type: "Lab", area: "Cybersecurity", status: "Ongoing" }
+    ]
+  },
+
+  // categories: used by the project filter: "cybersecurity", "networking", "it-systems", "academic"
   // context: small label above the title, e.g. "MSc Dissertation"
   // featured: true shows the project larger at the top
   projects: [
     {
       title: "Anonymous VPN Browser Extension",
       context: "MSc Dissertation",
-      category: "academic",
+      categories: ["networking", "cybersecurity", "academic"],
       featured: true,
       summary:
         "Cross-platform browser extension for stronger user privacy, giving each tab a randomised VPN connection. Includes a full UI with country selection, random server choice and connection status indicators, backed by research into OpenVPN, IPsec and WireGuard.",
@@ -194,7 +291,7 @@ window.PORTFOLIO = {
     {
       title: "FinAccess Security Assurance Program",
       context: "CS552H Academic Project",
-      category: "academic",
+      categories: ["cybersecurity", "academic"],
       featured: true,
       summary:
         "Security assurance framework for a financial inclusion platform serving 10M+ users. Built GDPR, PSD2 and PCI DSS compliance into every SDLC phase, designed a microservices architecture with continuous testing (unit, integration, penetration), and set monitoring and incident response protocols using MITRE ATT&CK.",
@@ -205,7 +302,7 @@ window.PORTFOLIO = {
     {
       title: "Wireless Security Protocol Analysis",
       context: "CS502B Academic Project",
-      category: "academic",
+      categories: ["networking", "cybersecurity", "academic"],
       summary:
         "Analysis of WEP, WPA, WPA2 and WPA3 covering encryption mechanisms and known vulnerabilities, with documented protocol evolution, security improvements and enterprise implementation best practices.",
       result: "",
@@ -215,7 +312,7 @@ window.PORTFOLIO = {
     {
       title: "GDPR Compliance & Data Protection Governance",
       context: "Academic Assignment",
-      category: "academic",
+      categories: ["cybersecurity", "academic"],
       summary:
         "Case analysis of the Company W data breach (£8.7M ICO fine, 5M citizens affected). Produced a data protection governance framework, GDPR implementation roadmap, security awareness training, encryption and access control strategies, and privacy audit procedures.",
       result: "",
@@ -225,7 +322,7 @@ window.PORTFOLIO = {
     {
       title: "IoT-Based Monitoring System with SCADA",
       context: "Bachelor's Final Project",
-      category: "academic",
+      categories: ["networking", "academic"],
       summary:
         "IoT-enabled nutrient management system for shrimp aquaculture using a SCADA architecture, with real-time data collection, wireless sensor networks, automated monitoring and alerting.",
       result: "",
@@ -235,7 +332,7 @@ window.PORTFOLIO = {
     {
       title: "Website Penetration Testing: SQL Injection",
       context: "Security testing",
-      category: "hands-on",
+      categories: ["cybersecurity"],
       summary:
         "Black-box testing of a live web application with Burp Suite. Documented each finding with exploitation scenarios, remediation recommendations and security patches.",
       result: "3 critical SQL injection flaws found · attack exposure cut by 80% after fixes",
@@ -245,7 +342,7 @@ window.PORTFOLIO = {
     {
       title: "Network Traffic Analysis & Monitoring System",
       context: "Network security",
-      category: "hands-on",
+      categories: ["networking", "cybersecurity"],
       summary:
         "Real-time network traffic monitoring with Wireshark and SIEM integration, using automated packet inspection to flag security incidents and network anomalies.",
       result: "Threat detection improved by 20% · 1,000+ packets analysed daily",
@@ -255,7 +352,7 @@ window.PORTFOLIO = {
     {
       title: "Secure Email Platform Implementation",
       context: "Data protection",
-      category: "hands-on",
+      categories: ["it-systems", "cybersecurity"],
       summary:
         "Secure email system using Microsoft Purview encryption, with industry-standard security protocols and authentication mechanisms.",
       result: "100% compliance with internal DLP policies · 100+ communications protected end to end",
@@ -265,7 +362,7 @@ window.PORTFOLIO = {
     {
       title: "Security Log Monitoring & Incident Detection Tool",
       context: "Automation",
-      category: "hands-on",
+      categories: ["cybersecurity", "it-systems"],
       summary:
         "Python tool that reads sign-in and system event logs, detects brute-force attempts and unusual login activity, and writes incident reports without manual review.",
       result: "Monitoring efficiency improved by 30%",
@@ -275,7 +372,7 @@ window.PORTFOLIO = {
     {
       title: "Phishing Email Detection & Risk Assessment System",
       context: "Machine learning",
-      category: "hands-on",
+      categories: ["cybersecurity"],
       summary:
         "Python system using the Gmail API with rule-based checks, URL analysis and a machine learning model to give each inbound email a documented risk verdict.",
       result: "",

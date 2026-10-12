@@ -27,6 +27,21 @@
     mail: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>',
     phone: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>',
     linkedin: '<svg class="solid" viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.95 1.32-1.95 2.69V21h-4V9.75Z"/></svg>',
+    headset: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/><path d="M19 20a3 3 0 0 1-3 2h-3"/></svg>',
+    monitor: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
+    network: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-2h12v2"/></svg>',
+    server: '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg>',
+    shield: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3Z"/><path d="M9 12l2 2 4-4"/></svg>',
+    tool: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.5-.5-.5-2.5 2.5-2.5Z"/></svg>',
+    search: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>',
+    chat: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg>',
+    users: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.5a6.5 6.5 0 0 1 3.5 5.5"/></svg>',
+    puzzle: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3a2 2 0 1 0 4 0V3h3v7h-3a2 2 0 1 0 0 4h3v7h-7v-3a2 2 0 1 0-4 0v3H3v-7h3a2 2 0 1 0 0-4H3V3h7Z"/></svg>',
+    refresh: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.3-4.9L4 8"/><path d="M4 3v5h5M4 13a8 8 0 0 0 14.3 4.9L20 16"/><path d="M20 21v-5h-5"/></svg>',
+    book: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5Z"/><path d="M4 19a2 2 0 0 1 2-2h13"/></svg>',
+    target: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>',
+    bulb: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3Z"/></svg>',
+    compass: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5 5-2Z"/></svg>',
     github: '<svg class="solid" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>'
   };
 
@@ -41,7 +56,7 @@
   });
 
   // ---- Hero profile card ------------------------------------------------
-  var facts = [[ICON.pin, p.location], [ICON.clock, p.availability], [ICON.plane, p.relocation], [ICON.moon, p.shifts]];
+  var facts = [[ICON.pin, p.location], [ICON.clock, p.availability], [ICON.briefcase, p.openTo], [ICON.plane, p.relocation], [ICON.moon, p.shifts]];
   $("#profileList").innerHTML = each(facts.filter(function (f) { return f[1]; }), function (f) { return "<li>" + f[0] + "<span>" + txt(f[1]) + "</span></li>"; });
   $("#profileNow").innerHTML = txt(p.currentRole) + (p.currentOrg ? ' <span class="muted">at</span> ' + txt(p.currentOrg) : "");
 
@@ -49,10 +64,35 @@
   $("#aboutBody").innerHTML = each(data.about, function (para) { return "<p>" + txt(para) + "</p>"; });
   var goals = data.goals || {};
   $("#goalText").innerHTML = txt(goals.statement);
-  $("#targetRoles").innerHTML = each(goals.targetRoles, function (r) { return "<li>" + txt(r) + "</li>"; });
+  $("#targetRoles").innerHTML = each(goals.targetRoles, function (r) {
+    var role = typeof r === "string" ? r : r.role;
+    var icon = (typeof r === "object" && ICON[r.icon]) || ICON.briefcase;
+    return '<li><span class="role-icon">' + icon + "</span><span>" + txt(role) + "</span></li>";
+  });
+  $("#openTo").innerHTML = each(goals.openTo, function (o) { return "<li>" + txt(o) + "</li>"; });
 
-  // ---- Experience -------------------------------------------------------
-  $("#experienceList").innerHTML = each(data.experience, function (x) {
+  // ---- Experience by area (each item labelled with its source) ------------
+  var SOURCES = {
+    employment: "Employment", internship: "Internship", lab: "Lab / training",
+    project: "Project", academic: "Academic / course", knowledge: "Technical knowledge"
+  };
+  var usedSources = {};
+  (data.areas || []).forEach(function (a) { (a.items || []).forEach(function (it) { usedSources[it.source] = true; }); });
+  $("#sourceLegend").innerHTML = each(Object.keys(SOURCES).filter(function (k) { return usedSources[k]; }), function (k) {
+    return '<li><span class="src src-' + k + '">' + SOURCES[k] + "</span></li>";
+  });
+  $("#areaGrid").innerHTML = each(data.areas, function (a) {
+    return '<article class="area-card"><div class="area-head"><span class="area-icon">' + (ICON[a.icon] || ICON.briefcase) + "</span><h4>" + txt(a.area) + "</h4></div>" +
+      '<ul class="area-items">' + each(a.items, function (it) {
+        var label = SOURCES[it.source] || it.source || "";
+        return "<li><span class=\"area-text\">" + txt(it.text) + "</span>" +
+          '<span class="area-src"><span class="src src-' + esc(it.source) + '">' + esc(label) + "</span>" +
+          (it.where ? '<span class="area-where">' + txt(it.where) + "</span>" : "") + "</span></li>";
+      }) + "</ul></article>";
+  });
+
+  // ---- Experience timeline (employment vs labs & training) ----------------
+  var renderJob = function (x) {
     var points = x.responsibilities || x.points || [];
     return '<li class="tl-item' + (x.current ? " current" : "") + '"><span class="tl-dot" aria-hidden="true"></span>' +
       '<article class="exp-card">' +
@@ -69,7 +109,12 @@
           (x.skills && x.skills.length ? '<div><p class="mini-label">Skills developed</p><ul class="chips">' + each(x.skills, function (s) { return "<li>" + txt(s) + "</li>"; }) + "</ul></div>" : "") +
         "</div>" +
       "</article></li>";
-  });
+  };
+  var jobs = data.experience || [];
+  $("#experienceList").innerHTML = each(jobs.filter(function (x) { return x.kind !== "training"; }), renderJob);
+  var training = jobs.filter(function (x) { return x.kind === "training"; });
+  $("#trainingList").innerHTML = each(training, renderJob);
+  if (!training.length) { $("#trainingList").hidden = true; $("#trainingList").previousElementSibling.hidden = true; }
 
   // ---- Projects ---------------------------------------------------------
   var projects = (data.projects || []).slice().sort(function (a, b) { return (b.featured ? 1 : 0) - (a.featured ? 1 : 0); });
@@ -79,7 +124,8 @@
     if (code) links.push('<a href="' + esc(code) + '" target="_blank" rel="noopener">' + ICON.github + "View on GitHub</a>");
     if (demo) links.push('<a href="' + esc(demo) + '" target="_blank" rel="noopener">Live demo →</a>');
     var outcomes = pr.result ? String(pr.result).split(" · ") : [];
-    return '<article class="project" data-category="' + esc(pr.category || "") + '">' +
+    var cats = pr.categories || (pr.category ? [pr.category] : []);
+    return '<article class="project" data-categories="' + esc(cats.join(" ")) + '">' +
       '<div class="project-top"><span class="project-ctx">' + txt(pr.context || "") + "</span>" + (pr.featured ? '<span class="feat">Featured</span>' : "") + "</div>" +
       "<h3>" + txt(pr.title) + "</h3>" +
       '<p class="desc">' + txt(pr.summary) + "</p>" +
@@ -94,13 +140,30 @@
     var f = btn.getAttribute("data-filter");
     document.querySelectorAll(".tab").forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
     document.querySelectorAll(".project").forEach(function (card) {
-      card.hidden = !(f === "all" || card.getAttribute("data-category") === f);
+      card.hidden = !(f === "all" || (" " + card.getAttribute("data-categories") + " ").indexOf(" " + f + " ") > -1);
     });
   });
 
-  // ---- Skills -----------------------------------------------------------
+  // ---- Technical skills ---------------------------------------------------
   $("#skillsGrid").innerHTML = each(data.skills, function (g) {
-    return '<div class="skill-card"><h3>' + txt(g.group) + '</h3><ul class="chips">' + each(g.items, function (i) { return "<li>" + txt(i) + "</li>"; }) + "</ul></div>";
+    return '<div class="skill-card"><h3>' + (g.icon && ICON[g.icon] ? '<span class="skill-icon">' + ICON[g.icon] + "</span>" : "") + txt(g.group) + '</h3><ul class="chips">' + each(g.items, function (i) { return "<li>" + txt(i) + "</li>"; }) + "</ul></div>";
+  });
+
+  // ---- Soft skills --------------------------------------------------------
+  $("#softGrid").innerHTML = each(data.softSkills, function (sk) {
+    return '<li class="soft-card"><span class="soft-icon">' + (ICON[sk.icon] || ICON.check) + '</span><div><h3>' + txt(sk.name) + "</h3>" +
+      (sk.note ? "<p>" + txt(sk.note) + "</p>" : "") + "</div></li>";
+  });
+
+  // ---- Continuous learning ------------------------------------------------
+  var learning = data.learning || {};
+  $("#learningIntro").innerHTML = txt(learning.intro);
+  $("#learnGrid").innerHTML = each(learning.items, function (it) {
+    var st = String(it.status || "").toLowerCase().replace(/\s+/g, "-");
+    return '<li class="learn-item"><div class="learn-top"><span class="learn-type">' + esc(it.type) + '</span>' +
+      (it.status ? '<span class="learn-status st-' + esc(st) + '">' + esc(it.status) + "</span>" : "") + "</div>" +
+      '<p class="learn-name">' + txt(it.name) + "</p>" +
+      (it.area ? '<p class="learn-area">' + txt(it.area) + "</p>" : "") + "</li>";
   });
 
   // ---- Education & certifications ----------------------------------------

@@ -30,10 +30,13 @@ Open `assets/js/content.js` and edit the text. Common changes:
 | -------------------------- | --------------------------------------------- |
 | Name, title, intro, availability | `profile`                               |
 | About paragraphs           | `about`                                       |
-| Career goal, target roles  | `goals`                                       |
-| Jobs / internships         | `experience`: `summary`, `responsibilities`, `skills` per role |
-| Skills                     | `skills`                                      |
-| Projects + GitHub links    | `projects` → `links.code` / `links.demo`; `featured: true` makes a card full width; `category` drives the filter |
+| Career interests, target roles, "open to" | `goals`                         |
+| Experience by area (IT Support, Networking…) | `areas`: each item has a `source` label (internship, lab, project, academic, knowledge) |
+| Jobs / internships         | `experience`: `summary`, `responsibilities`, `skills` per role; `kind: "training"` lists it under Labs & training |
+| Technical skills           | `skills` (tags only, no proficiency levels)   |
+| Soft skills                | `softSkills`                                  |
+| Currently learning         | `learning.items`: add a course, certification, lab or technology with a `status` |
+| Projects + GitHub links    | `projects` → `links.code` / `links.demo`; `featured: true` adds a Featured badge; `categories` (cybersecurity, networking, it-systems, academic) drive the filter |
 | Degrees                    | `education`                                   |
 | Certifications             | `certifications`                              |
 | Email, LinkedIn, GitHub    | `contact` (`showPhone: true` shows your mobile) |
