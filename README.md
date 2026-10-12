@@ -15,9 +15,16 @@ portfolio/
 │   ├── js/main.js             # Renders content.js into the page (rarely needs changes)
 │   ├── img/favicon.svg        # Browser tab icon
 │   └── resume/Ayvon_Joseph_Biji_CV.pdf   # The CV behind the "Download CV" buttons
+├── classic/                   # The first design, kept for comparison (yoursite/classic)
 ├── vercel.json                # Vercel settings (clean URLs, cache + security headers)
 └── README.md
 ```
+
+## Designs
+
+- **Main design** (`/`): fixed profile sidebar, dark navy with amber accent, light mode toggle, filterable projects.
+- **Classic design** (`/classic`): the first light, single-column version. Both read the same `content.js`.
+  Delete the `classic/` folder once you've chosen.
 
 ## Updating content
 
@@ -29,7 +36,7 @@ Open `assets/js/content.js` and edit the text. Common changes:
 | About paragraphs           | `about`                                       |
 | Jobs / internships         | `experience` (copy a `{ ... }` block to add)   |
 | Skills                     | `skills`                                      |
-| Projects + GitHub links    | `projects` → `links.code` / `links.demo`       |
+| Projects + GitHub links    | `projects` → `links.code` / `links.demo`; `featured: true` makes a card full width; `category` drives the filter |
 | Degrees                    | `education`                                   |
 | Certifications             | `certifications`                              |
 | Email, LinkedIn, GitHub    | `contact` (`showPhone: true` shows your mobile) |

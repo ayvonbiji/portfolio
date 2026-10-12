@@ -45,6 +45,20 @@ window.PORTFOLIO = {
       ]
     },
     {
+      role: "Cybersecurity Trainee",
+      org: "TryHackMe",
+      place: "Online, hands-on labs",
+      dates: "Apr 2025 – Present",
+      current: true,
+      points: [
+        "Building practical cybersecurity skills through hands-on TryHackMe rooms based on real-world scenarios.",
+        "Completed the SIEM room: security monitoring, incident response, log analysis and threat detection.",
+        "Completed the Cryptography room: RSA, encryption fundamentals, Diffie-Hellman and post-quantum cryptography.",
+        "Practising ethical hacking, network security, web application security and the OWASP Top 10.",
+        "Learning penetration testing methodology, defensive security and threat analysis."
+      ]
+    },
+    {
       role: "Domestic Assistant (Full-Time)",
       org: "Renaissance Care",
       place: "Scotland, United Kingdom",
@@ -118,37 +132,110 @@ window.PORTFOLIO = {
     }
   ],
 
+  // category: "academic" or "hands-on" (used by the project filter)
+  // context: small label above the title, e.g. "MSc Dissertation"
+  // featured: true shows the project larger at the top
   projects: [
     {
-      title: "Security Log Monitoring & Incident Detection Tool",
+      title: "Anonymous VPN Browser Extension",
+      context: "MSc Dissertation",
+      category: "academic",
+      featured: true,
       summary:
-        "Python tool that reads sign-in and system event logs, detects brute-force attempts and unusual login activity, and writes incident reports without manual review.",
-      result: "Improved monitoring efficiency by 30%",
-      tags: ["Python", "Log analysis", "Detection"],
+        "Cross-platform browser extension for stronger user privacy, giving each tab a randomised VPN connection. Includes a full UI with country selection, random server choice and connection status indicators, backed by research into OpenVPN, IPsec and WireGuard.",
+      result: "",
+      tags: ["JavaScript", "HTML", "CSS", "Chrome Extension APIs", "VPN"],
       links: { code: "", demo: "" } // add a GitHub URL to show a "Code" link
     },
     {
-      title: "Network Traffic Analysis & Monitoring System",
+      title: "FinAccess Security Assurance Program",
+      context: "CS552H Academic Project",
+      category: "academic",
+      featured: true,
       summary:
-        "Real-time monitoring with Wireshark and SIEM integration, capturing packets and examining traffic at protocol level with anomaly rules.",
-      result: "Detection accuracy up 20%, mostly by cutting false positives",
-      tags: ["Wireshark", "SIEM", "Networking"],
+        "Security assurance framework for a financial inclusion platform serving 10M+ users. Built GDPR, PSD2 and PCI DSS compliance into every SDLC phase, designed a microservices architecture with continuous testing (unit, integration, penetration), and set monitoring and incident response protocols using MITRE ATT&CK.",
+      result: "",
+      tags: ["GDPR", "PSD2", "PCI DSS", "Secure SDLC", "MITRE ATT&CK"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "Wireless Security Protocol Analysis",
+      context: "CS502B Academic Project",
+      category: "academic",
+      summary:
+        "Analysis of WEP, WPA, WPA2 and WPA3 covering encryption mechanisms and known vulnerabilities, with documented protocol evolution, security improvements and enterprise implementation best practices.",
+      result: "",
+      tags: ["Wi-Fi security", "WPA3", "Cryptography"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "GDPR Compliance & Data Protection Governance",
+      context: "Academic Assignment",
+      category: "academic",
+      summary:
+        "Case analysis of the Company W data breach (£8.7M ICO fine, 5M citizens affected). Produced a data protection governance framework, GDPR implementation roadmap, security awareness training, encryption and access control strategies, and privacy audit procedures.",
+      result: "",
+      tags: ["GDPR", "Governance", "Risk & compliance"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "IoT-Based Monitoring System with SCADA",
+      context: "Bachelor's Final Project",
+      category: "academic",
+      summary:
+        "IoT-enabled nutrient management system for shrimp aquaculture using a SCADA architecture, with real-time data collection, wireless sensor networks, automated monitoring and alerting.",
+      result: "",
+      tags: ["IoT", "SCADA", "Sensor networks"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "Website Penetration Testing: SQL Injection",
+      context: "Security testing",
+      category: "hands-on",
+      summary:
+        "Black-box testing of a live web application with Burp Suite. Documented each finding with exploitation scenarios, remediation recommendations and security patches.",
+      result: "3 critical SQL injection flaws found · attack exposure cut by 80% after fixes",
+      tags: ["Burp Suite", "SQL injection", "OWASP"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "Network Traffic Analysis & Monitoring System",
+      context: "Network security",
+      category: "hands-on",
+      summary:
+        "Real-time network traffic monitoring with Wireshark and SIEM integration, using automated packet inspection to flag security incidents and network anomalies.",
+      result: "Threat detection improved by 20% · 1,000+ packets analysed daily",
+      tags: ["Wireshark", "SIEM", "Packet analysis"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "Secure Email Platform Implementation",
+      context: "Data protection",
+      category: "hands-on",
+      summary:
+        "Secure email system using Microsoft Purview encryption, with industry-standard security protocols and authentication mechanisms.",
+      result: "100% compliance with internal DLP policies · 100+ communications protected end to end",
+      tags: ["Microsoft Purview", "DLP", "Encryption"],
+      links: { code: "", demo: "" }
+    },
+    {
+      title: "Security Log Monitoring & Incident Detection Tool",
+      context: "Automation",
+      category: "hands-on",
+      summary:
+        "Python tool that reads sign-in and system event logs, detects brute-force attempts and unusual login activity, and writes incident reports without manual review.",
+      result: "Monitoring efficiency improved by 30%",
+      tags: ["Python", "Log analysis", "Detection"],
       links: { code: "", demo: "" }
     },
     {
       title: "Phishing Email Detection & Risk Assessment System",
+      context: "Machine learning",
+      category: "hands-on",
       summary:
         "Python system using the Gmail API with rule-based checks, URL analysis and a machine learning model to give each inbound email a documented risk verdict.",
       result: "",
       tags: ["Python", "Gmail API", "Machine learning"],
-      links: { code: "", demo: "" }
-    },
-    {
-      title: "Web Application Penetration Testing (SQL Injection)",
-      summary:
-        "Structured black-box testing with Burp Suite, with each finding documented with reproduction steps, severity and remediation guidance.",
-      result: "Identified 3 critical vulnerabilities",
-      tags: ["Burp Suite", "SQL injection", "Reporting"],
       links: { code: "", demo: "" }
     }
   ],

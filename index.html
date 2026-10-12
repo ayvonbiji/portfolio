@@ -3,130 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Ayvon Joseph Biji · SOC Analyst & IT Support</title>
-  <meta name="description" content="Portfolio of Ayvon Joseph Biji: SOC analyst, IT support and cybersecurity. MSc Cybersecurity (University of Aberdeen), B.Tech Computer Science.">
-  <meta property="og:title" content="Ayvon Joseph Biji · SOC Analyst & IT Support">
-  <meta property="og:description" content="SOC analyst, IT support and cybersecurity portfolio.">
+  <title>Ayvon Joseph Biji · SOC Analyst & Cybersecurity</title>
+  <meta name="description" content="Portfolio of Ayvon Joseph Biji: SOC analyst, cybersecurity and IT support. MSc Cybersecurity (University of Aberdeen), B.Tech Computer Science.">
+  <meta property="og:title" content="Ayvon Joseph Biji · SOC Analyst & Cybersecurity">
+  <meta property="og:description" content="SOC analyst, cybersecurity and IT support portfolio.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#f4f6f9">
+  <meta name="theme-color" content="#0b111c">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112,700;112,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <!--PREVIEW-HEAD-END-->
 </head>
 <body>
 <!--PREVIEW-BODY-START-->
   <a class="skip" href="#main">Skip to content</a>
 
-  <header class="topbar" id="top">
-    <div class="wrap topbar-inner">
-      <a class="brand" href="#home" aria-label="Home"><span class="brand-mark" data-bind="initials"></span><span class="brand-name" data-bind="name"></span></a>
-      <nav class="nav" id="nav" aria-label="Main">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+  <div class="shell">
+    <aside class="side" id="side">
+      <div class="side-top">
+        <a class="mark" href="#about" data-bind="initials" aria-label="Back to top"></a>
+        <div class="side-actions">
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle light or dark mode">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          </button>
+          <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="id-block">
+        <h1 data-bind="name"></h1>
+        <p class="role" data-bind="headline"></p>
+        <p class="side-intro" data-bind="intro"></p>
+        <p class="status"><span class="beacon" aria-hidden="true"></span><span data-bind="availability"></span></p>
+      </div>
+
+      <nav class="nav" id="nav" aria-label="Sections">
+        <a href="#about"><span class="nav-line" aria-hidden="true"></span>About</a>
+        <a href="#experience"><span class="nav-line" aria-hidden="true"></span>Experience</a>
+        <a href="#projects"><span class="nav-line" aria-hidden="true"></span>Projects</a>
+        <a href="#skills"><span class="nav-line" aria-hidden="true"></span>Skills</a>
+        <a href="#education"><span class="nav-line" aria-hidden="true"></span>Education</a>
+        <a href="#contact"><span class="nav-line" aria-hidden="true"></span>Contact</a>
       </nav>
-      <div class="topbar-actions">
-        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
-        </button>
-        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
-      </div>
-    </div>
-  </header>
 
-  <main id="main">
-    <section class="hero" id="home">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="kicker" data-bind="headline"></p>
-          <h1 data-bind="name"></h1>
-          <p class="lead" data-bind="intro"></p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#projects">View projects</a>
-            <a class="btn btn-ghost" id="heroResume" href="#resume">Download CV</a>
-          </div>
-        </div>
-        <aside class="case-card" aria-label="Current status">
-          <div class="case-head"><span class="dot" aria-hidden="true"></span><span>Status</span><span class="case-id">Available</span></div>
-          <dl class="case-fields" id="statusFields"></dl>
-        </aside>
+      <div class="side-foot">
+        <a class="btn btn-accent" id="sideResume" href="#contact" download>Download CV</a>
+        <div class="socials" id="socials"></div>
       </div>
-    </section>
+    </aside>
 
-    <section class="section" id="about">
-      <div class="wrap two-col">
-        <header class="section-head"><p class="eyebrow">About</p><h2>From the service desk to the SOC queue</h2></header>
+    <main class="content" id="main">
+      <section class="block" id="about" aria-labelledby="about-h">
+        <h2 class="label" id="about-h">About</h2>
         <div class="prose" id="aboutBody"></div>
-      </div>
-    </section>
+        <dl class="facts" id="facts"></dl>
+      </section>
 
-    <section class="section alt" id="experience">
-      <div class="wrap">
-        <header class="section-head"><p class="eyebrow">Experience</p><h2>Where I've worked</h2></header>
-        <ol class="timeline" id="experienceList"></ol>
-      </div>
-    </section>
+      <section class="block" id="experience" aria-labelledby="exp-h">
+        <h2 class="label" id="exp-h">Experience</h2>
+        <ol class="jobs" id="experienceList"></ol>
+      </section>
 
-    <section class="section" id="skills">
-      <div class="wrap">
-        <header class="section-head"><p class="eyebrow">Skills</p><h2>Tools and practices I use</h2></header>
-        <div class="skills-grid" id="skillsGrid"></div>
-      </div>
-    </section>
-
-    <section class="section alt" id="projects">
-      <div class="wrap">
-        <header class="section-head"><p class="eyebrow">Projects</p><h2>Academic and personal work</h2></header>
-        <div class="projects-grid" id="projectsGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <div class="wrap">
-        <header class="section-head"><p class="eyebrow">Education &amp; certifications</p><h2>Qualifications</h2></header>
-        <div class="edu-layout">
-          <div class="edu-list" id="educationList"></div>
-          <div class="cert-box">
-            <h3>Certifications &amp; training</h3>
-            <ul class="cert-list" id="certList"></ul>
+      <section class="block" id="projects" aria-labelledby="proj-h">
+        <div class="label-row">
+          <h2 class="label" id="proj-h">Projects</h2>
+          <div class="filters" role="group" aria-label="Filter projects" id="filters">
+            <button type="button" class="filter" id="f-all" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter" id="f-academic" data-filter="academic" aria-pressed="false">Academic</button>
+            <button type="button" class="filter" id="f-hands" data-filter="hands-on" aria-pressed="false">Hands-on</button>
           </div>
         </div>
-      </div>
-    </section>
+        <div class="projects" id="projectsGrid"></div>
+      </section>
 
-    <section class="section resume-band" id="resume">
-      <div class="wrap resume-inner">
-        <div>
-          <p class="eyebrow">Resume</p>
-          <h2>Download my CV</h2>
-          <p class="muted" data-bind="resumeNote"></p>
-        </div>
-        <a class="btn btn-primary" id="resumeLink" href="#" download>Download PDF</a>
-      </div>
-    </section>
+      <section class="block" id="skills" aria-labelledby="skills-h">
+        <h2 class="label" id="skills-h">Skills</h2>
+        <div class="skills" id="skillsGrid"></div>
+      </section>
 
-    <section class="section" id="contact">
-      <div class="wrap">
-        <header class="section-head"><p class="eyebrow">Contact</p><h2>Let's talk</h2><p class="muted">Open to L1 SOC, incident analyst and IT support roles. Email is the quickest way to reach me.</p></header>
+      <section class="block" id="education" aria-labelledby="edu-h">
+        <h2 class="label" id="edu-h">Education &amp; certifications</h2>
+        <div class="edu" id="educationList"></div>
+        <ul class="certs" id="certList"></ul>
+      </section>
+
+      <section class="block contact" id="contact" aria-labelledby="contact-h">
+        <h2 class="label" id="contact-h">Contact</h2>
+        <p class="contact-lead">Open to L1 SOC, incident analyst and IT support roles. <span class="dim">Immediate joiner, open to relocation.</span></p>
         <div class="contact-grid" id="contactGrid"></div>
-      </div>
-    </section>
-  </main>
+        <div class="resume-row">
+          <div>
+            <p class="resume-title">Curriculum vitae</p>
+            <p class="dim" data-bind="resumeNote"></p>
+          </div>
+          <a class="btn btn-ghost" id="resumeLink" href="#contact" download>Download PDF</a>
+        </div>
+      </section>
 
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <span>© <span id="year"></span> <span data-bind="name"></span></span>
-      <a href="#home">Back to top ↑</a>
-    </div>
-  </footer>
+      <footer class="footer">
+        <span>© <span id="year"></span> <span data-bind="name"></span></span>
+        <span class="dim">Built with HTML, CSS &amp; JavaScript</span>
+      </footer>
+    </main>
+  </div>
 <!--PREVIEW-BODY-END-->
   <script src="assets/js/content.js"></script>
   <script src="assets/js/main.js"></script>

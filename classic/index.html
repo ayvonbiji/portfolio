@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Ayvon Joseph Biji · SOC Analyst & IT Support</title>
+  <meta name="description" content="Portfolio of Ayvon Joseph Biji: SOC analyst, IT support and cybersecurity. MSc Cybersecurity (University of Aberdeen), B.Tech Computer Science.">
+  <meta property="og:title" content="Ayvon Joseph Biji · SOC Analyst & IT Support">
+  <meta property="og:description" content="SOC analyst, IT support and cybersecurity portfolio.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f4f6f9">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="classic.css">
+  <!--PREVIEW-HEAD-END-->
+</head>
+<body>
+<!--PREVIEW-BODY-START-->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar" id="top">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#home" aria-label="Home"><span class="brand-mark" data-bind="initials"></span><span class="brand-name" data-bind="name"></span></a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker" data-bind="headline"></p>
+          <h1 data-bind="name"></h1>
+          <p class="lead" data-bind="intro"></p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#projects">View projects</a>
+            <a class="btn btn-ghost" id="heroResume" href="#resume">Download CV</a>
+          </div>
+        </div>
+        <aside class="case-card" aria-label="Current status">
+          <div class="case-head"><span class="dot" aria-hidden="true"></span><span>Status</span><span class="case-id">Available</span></div>
+          <dl class="case-fields" id="statusFields"></dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap two-col">
+        <header class="section-head"><p class="eyebrow">About</p><h2>From the service desk to the SOC queue</h2></header>
+        <div class="prose" id="aboutBody"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience">
+      <div class="wrap">
+        <header class="section-head"><p class="eyebrow">Experience</p><h2>Where I've worked</h2></header>
+        <ol class="timeline" id="experienceList"></ol>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="wrap">
+        <header class="section-head"><p class="eyebrow">Skills</p><h2>Tools and practices I use</h2></header>
+        <div class="skills-grid" id="skillsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="projects">
+      <div class="wrap">
+        <header class="section-head"><p class="eyebrow">Projects</p><h2>Academic and personal work</h2></header>
+        <div class="projects-grid" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="wrap">
+        <header class="section-head"><p class="eyebrow">Education &amp; certifications</p><h2>Qualifications</h2></header>
+        <div class="edu-layout">
+          <div class="edu-list" id="educationList"></div>
+          <div class="cert-box">
+            <h3>Certifications &amp; training</h3>
+            <ul class="cert-list" id="certList"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section resume-band" id="resume">
+      <div class="wrap resume-inner">
+        <div>
+          <p class="eyebrow">Resume</p>
+          <h2>Download my CV</h2>
+          <p class="muted" data-bind="resumeNote"></p>
+        </div>
+        <a class="btn btn-primary" id="resumeLink" href="#" download>Download PDF</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <header class="section-head"><p class="eyebrow">Contact</p><h2>Let's talk</h2><p class="muted">Open to L1 SOC, incident analyst and IT support roles. Email is the quickest way to reach me.</p></header>
+        <div class="contact-grid" id="contactGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span data-bind="name"></span></span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+<!--PREVIEW-BODY-END-->
+  <script src="../assets/js/content.js"></script>
+  <script src="classic.js"></script>
+</body>
+</html>
